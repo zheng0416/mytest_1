@@ -1,0 +1,40 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>试试看大百科界面</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	 <style type="text/css">
+		body{background-image:url(src/t30.jpg); background-repeat:no-repeat;background-size:1007px 600px;background-position:center top; }
+		 #Z{width:1007px;height: 600px;margin: 0 auto;}
+		 #A2{width:107px;height:560px;border-radius:10px;margin-top:578px;margin-left:450px;}
+
+		 #b3{margin-left:15px;margin-top:-25px;}
+.demo{width:900px;margin-top:-1000px;margin-left:50px;}		 
+</style>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript">
+var init={'questions':[{'question':'我们国家保护动物分为几个级别？','answers':['1','2','3','4'],'correctAnswer':2},{'question':'下面几种动物中，不能私人饲养作宠物的是（）','answers':['乌龟','松鼠','扬子鳄','黄鼬'],'correctAnswer':3},{'question':'以下哪点不属于我们不应该食用野生动物的理由？','answers':['野生动物体内积累的重金属污染物可能比家养动物高','野生动物体内和体表寄生虫很多','野生动物是生态系统重要组成部分，过度捕食会影响生态系统稳定性','野生动物的营养价值比家养动物高，过度滋补对身体有害'],'correctAnswer':3},{'question':'保护野生动植物意义很多，不属于其意义的是（）','answers':['观赏价值','环境效应','文化价值','生态稳定性'],'correctAnswer':1}]};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+	
+</head>
+<body>
+	<div id="Z">
+<div id="A2">
+	<p><a href="game1.html"><input type="button" value="返回上级"  id="b3"></a></p>	
+</div>
+<div class="demo">
+	<div id='quiz-container'></div>
+</div>
+
+	</div>
+</body>
+</html>
